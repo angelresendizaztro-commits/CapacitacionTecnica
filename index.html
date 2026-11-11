@@ -34,8 +34,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center space-x-3">
-                    <!-- Logotipo Oficial -->
-    <img src="Logo.png" alt="Capacitación Técnica Logo" class="w-11 h-11 rounded-full border-2 border-white object-cover shadow-lg shadow-blue-900/40">
+                    <!-- Logotipo Oficial con borde blanco -->
+                    <img src="Logo.png" alt="Capacitación Técnica Logo" class="w-11 h-11 rounded-full border-2 border-white object-cover shadow-lg shadow-blue-900/40">
+                    <div>
                         <span class="text-lg font-black tracking-wider uppercase block text-white">Capacitación <span class="text-blue-400">Técnica</span></span>
                         <span class="text-[10px] text-slate-400 block tracking-widest uppercase font-semibold">Querétaro, Qro.</span>
                     </div>
@@ -91,29 +92,32 @@
                     </div>
                 </div>
 
-         <!-- Tarjeta Destacada con Imagen Integrada -->
-<div class="bg-gradient-to-br from-[#112240] to-[#0a192f] rounded-3xl border border-blue-500/30 shadow-2xl overflow-hidden">
-    <div class="h-48 overflow-hidden relative">
-        <img src="Imagen.jpg" alt="Operador CNC Capacitación Técnica" class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-t from-[#112240] to-transparent"></div>
-        <div class="absolute top-4 right-4 bg-blue-600 text-white font-black text-xs uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg z-10">
-            Cupo Limitado (Máx. 6 personas)
+                <!-- Tarjeta Destacada con Imagen Integrada (Imagen.jpg) -->
+                <div class="bg-gradient-to-br from-[#112240] to-[#0a192f] rounded-3xl border border-blue-500/30 shadow-2xl overflow-hidden">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="Imagen.jpg" alt="Operador CNC Capacitación Técnica" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#112240] to-transparent"></div>
+                        <div class="absolute top-4 right-4 bg-blue-600 text-white font-black text-xs uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg z-10">
+                            Cupo Limitado (Máx. 6 personas)
+                        </div>
+                    </div>
+                    <div class="p-8 pt-2">
+                        <h3 class="text-2xl font-black text-white uppercase mb-4">Metodología Práctica</h3>
+                        <ul class="space-y-4 text-sm text-slate-300 mb-6">
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-blue-400 mt-1 mr-3"></i>
+                                <span><strong>Desde Cero:</strong> No requieres conocimientos previos; iniciamos con matemáticas aplicadas y coordenadas cartesianas.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa-solid fa-check text-blue-400 mt-1 mr-3"></i>
+                                <span><strong>Casos Reales:</strong> Prácticas directas en centros de maquinado (como equipos HAAS) y simulación profesional.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="p-8 pt-2">
-        <h3 class="text-2xl font-black text-white uppercase mb-4">Metodología Práctica</h3>
-        <ul class="space-y-4 text-sm text-slate-300 mb-6">
-            <li class="flex items-start">
-                <i class="fa-solid fa-check text-blue-400 mt-1 mr-3"></i>
-                <span><strong>Desde Cero:</strong> No requieres conocimientos previos; iniciamos con matemáticas aplicadas y coordenadas cartesianas.</span>
-            </li>
-            <li class="flex items-start">
-                <i class="fa-solid fa-check text-blue-400 mt-1 mr-3"></i>
-                <span><strong>Casos Reales:</strong> Prácticas directas en centros de maquinado (como equipos HAAS) y simulación profesional.</span>
-            </li>
-        </ul>
-    </div>
-</div>
+    </section>
 
     <!-- Resumen del Temario -->
     <section id="temario" class="py-20 bg-[#070d1d] border-y border-slate-800/80">
@@ -344,7 +348,6 @@
             const knowledge = document.getElementById('studentKnowledge').value;
             const occupation = document.getElementById('studentOccupation').value;
 
-            // Uso de %0A para saltos de línea limpios en WhatsApp Web y App
             const text = `Hola, deseo solicitar mi inscripción al Curso de Operación de CNC en Querétaro.%0A%0A` +
                          `*Nombre:* ${encodeURIComponent(name)}%0A` +
                          `*Teléfono:* ${encodeURIComponent(phone)}%0A` +
